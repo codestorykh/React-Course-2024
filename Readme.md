@@ -22,6 +22,7 @@ Happy coding!
     - ESlint
     - ES7+ React/Redux/React-Native/JS snippets
     - Material Icon Theme
+    - Quokka.js
 
 ## Hello World with React
 
