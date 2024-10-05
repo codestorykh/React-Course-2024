@@ -14,6 +14,15 @@ const messages = [
 ];
 
 export default function App() {
+  return (
+    <div className="App" style={{ textAlign: "center" }}>
+      <h1>10 Steps to Become a Successful Developer</h1>
+      <Step />
+    </div>
+  );
+}
+
+function Step() {
   const [step, setStep] = useState(1);
 
   function handlerPrev() {
@@ -48,8 +57,12 @@ export default function App() {
       </p>
       <div className="buttons">
         <button
-          style={{ backgroundColor: "#7950f2", color: "#fff" }}
+          style={{
+            backgroundColor: step === 1 ? "gray" : "#7950f2",
+            color: "#fff",
+          }}
           onClick={handlerPrev}
+          disabled={step === 1}
         >
           Previous
         </button>
